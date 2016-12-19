@@ -235,29 +235,41 @@ ul,li{
   font-family: Nunito-Regular;
   letter-spacing: 1px;
 }
-#html5{
-  width:60%;
+#html{
+  width:90%;
 }
-#css3{
-  width:75%;
+#css{
+  width:90%;
 }
 #js{
-  width:82%;
+  width:85%;
 }
-#php{
-  width:68%;
+#html5{
+  width:88%;
+}
+#css3{
+  width:85%;
 }
 #jquery{
+  width:82%;
+}
+#less{
+  width:68%;
+}
+#angular{
   width:80%;
 }
-#ajax{
-  width:60%;
+#react{
+  width:73%;
 }
 #fullpage{
   width:70%;
 }
-#angular{
-  width:73%;
+#boorstrap{
+  width:80%;
+}
+#wxxcx{
+  width:85%;
 }
 .progress-bar-danger-3{
   transition:all .6s ease;
