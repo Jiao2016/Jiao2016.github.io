@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>王文娇作品汇总</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Recoup Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+        */
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<script src="js/jquery.swipebox.min.js"></script> 
+<script type="text/javascript">
+    jQuery(function($) {
+        $(".swipebox").swipebox();
+        var database = [
+        {filename:'./musics/The Innocence Mission - When Mac Was Swimming.mp3'},
+        {filename:'./musics/星期五见面.mp3'},
+        {filename:'./musics/신지수-왕복 30분.mp3'},
+        {filename:'./musics/Bobby Tinsley - Missing You.mp3'},
+        ]
+        audio = $('audio').get(0);
+        audio.play();
+        
+        $('.ps').on('click',function(){
+            if(audio.paused){
+                audio.play();
+                $(this).text('stop');
+            }else{
+                audio.pause();
+                $(this).text('play');
+            }
+        })
+
+        $('.play').on('click','li',function(){
+            $('.ps').text('stop');
+            currentsong = $(this).index();
+            audio.src = database[ currentsong ].filename;
+            audio.play();
+        })
+    });
+</script>
+</head>
+<body>
+<!-- 作品 -->
+    <div class="gallery">
+        <div class="container">
+            <h3 id="work">My works List</h3>
+            <div class="portfolio">
+                    <div id="portfoliolist">
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/todolist" target="blank">Todolist</a>       
+                             <a href="images/qq.jpg" class="swipebox"  title="Image Title"> <img src="images/todolist.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>              
+                    <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/icloud" target="blank">iCloud</a>       
+                             <a href="images/icloud.png" class="swipebox"  title="Image Title"> <img src="images/icloud.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>                  
+                    <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/zhihuribao" target="blank">知乎日报</a>     
+                             <a href="images/pczhrb.png" class="swipebox"  title="Image Title"> <img src="images/pczhrb.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/bdyq" target="blank">新闻管理</a>       
+                             <a href="images/xwgl.png" class="swipebox"  title="Image Title"> <img src="images/xwgl.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>          
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/Apple" target="blank">Apple官网</a>       
+                             <a href="images/apple.jpg" class="swipebox"  title="Image Title"> <img src="images/apple.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/bootstrap" target="blank">Bootstrap</a>
+                             <a href="images/students.jpg" class="swipebox"  title="Image Title"> <img src="images/bootstrap.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>  
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/kpyx" target="blank">酷跑游戏</a>       
+                             <a href="images/kp.png" class="swipebox"  title="Image Title"> <img src="images/kp.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>  
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/htb" target="blank">绘图板</a>     
+                             <a href="images/watch.jpg" class="swipebox"  title="Image Title"> <img src="images/hb.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="http://www.sxoxdl.cn/" target="blank">欧迅电力</a>       
+                             <a href="images/oxdl.png" class="swipebox"  title="Image Title"> <img src="images/oxdl.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>      
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="/jingdong" target="blank">山西烹饪</a>       
+                             <a href="images/sxprxx1.png" class="swipebox"  title="Image Title"> <img src="images/sxprxx.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>  
+                    <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="http://www.sxodzs.cn/3g/" target="blank">山西欧典装饰</a>          
+                             <a href="images/sxodzs1.png" class="swipebox"  title="Image Title"> <img src="images/sxodzs.png" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                        </div>
+                    <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper grid_box">
+                            <a class="a" href="worklist.html" target="blank">More</a>           
+                             <a href="images/14.JPG" class="swipebox"  title="Image Title"> <img src="images/14.JPG" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                        </div>
+                    </div>
+                <div class="clearfix"></div>                    
+                </div>
+          <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+<!-- 作品 -->
+</body>
+</html>
